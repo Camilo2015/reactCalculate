@@ -27,7 +27,8 @@ class Calculette extends React.Component {
     
     addOperation(op){
         this.setState({
-            operations: this.state.operations.concat(op)
+            operations: this.state.operations.concat(op),
+            resultat: this.state.operations.concat(op)
         });
         console.log('numéro à adtionner '+ op); 
     }
@@ -42,7 +43,8 @@ class Calculette extends React.Component {
             <h1 className="titleCalc"> Ma calculette </h1>
                  <Resultats>{this.state.resultat}</Resultats>
                 <div className="laTouche">
-                {[7, 8, 9, 4, 5, 6, 1, 2, 3, 0, '.'].map((c) => <Case key={c} onClick={() =>this.addOperation(c)}> {c}</Case>)}
+                {
+                    [1, 2, 3, 4, 5, 6, 7, 8, 9,  0, '.'].map((c) => <Case key={c} onClick={() =>this.addOperation(c)}> {c}</Case>)}
                 <Case className="result" onClick={this.calculate}>= </Case>
                 </div>
                 <div className="operateurs">
