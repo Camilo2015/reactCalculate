@@ -61,9 +61,10 @@ body {
     align-items: center;
     border-radius:50px;
     border: 1px solid #2ecc71;
+    background: #2ecc71;
 }
 .result:hover{
-    background: #2ecc71;
+    opacity: 0.8;
 }
 .laTouche{
     display: flex;

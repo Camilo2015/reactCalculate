@@ -44,7 +44,7 @@ class Calculette extends React.Component {
                  <Resultats>{this.state.resultat}</Resultats>
                 <div className="laTouche">
                 {
-                    [1, 2, 3, 4, 5, 6, 7, 8, 9,  0, '.'].map((c) => <Case key={c} onClick={() =>this.addOperation(c)}> {c}</Case>)}
+                    [7, 8, 9, 4, 5, 6, 1, 2, 3,  0, '.'].map((c) => <Case key={c} onClick={() =>this.addOperation(c)}> {c}</Case>)}
                 <Case className="result" onClick={this.calculate}>= </Case>
                 </div>
                 <div className="operateurs">
